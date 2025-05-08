@@ -32,14 +32,14 @@ function Dashboard() {
             setShowErr(false);
           }
         } catch (err) {
-          console.log(err);
+          console.log(err)
           setShowErr({ status: true, message: err.message });
         }
         setRefetch(false);
       }
       fetchData();
     }
-  }, [refetch, setRefetch, seTGiveAccess, setTasks, setUser, setShowErr]);
+  },[refetch] );
 
   if (showErr.status) return <ErrComponent message={showErr.message} />;
   if (refetch) {
