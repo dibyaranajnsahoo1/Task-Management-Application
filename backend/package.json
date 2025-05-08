@@ -4,11 +4,12 @@
   "description": "taskly backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "start:prod": "cross-env NODE_ENV=production && nodemon index.js",
-    "dev": "nodemon server.js"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon index.js", 
+  "start:prod": "cross-env NODE_ENV=production node index.js", 
+  "dev": "nodemon server.js" 
+}
+,
   "author": "",
   "license": "ISC",
   "dependencies": {
