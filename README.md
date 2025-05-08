@@ -1,53 +1,65 @@
-# Taskly - a task manager app
+# Task Management Application 📝
 
-**Taskly** is a task manager built with Vite, React, JavaScript, Node.js, Express, MongoDB, and Tailwind CSS. This app is designed for seamless task management, offering a beautiful and intuitive interface that works flawlessly across both web and mobile devices.
+**Task Management Application** is a comprehensive task manager built using **Vite**, **React**, **JavaScript**, **Node.js**, **Express**, **MongoDB**, and **Tailwind CSS**. It's designed to streamline task organization, enabling users to manage tasks efficiently with a responsive interface for both web and mobile platforms.
 
-## 🚀 Features
+## 🚀 Key Features
 
-### 🔑 Authentication
-- Sign up and log in functionality with secure password storage.
-- Update user details like name, email, role, and password in the settings page.
-- Log out and account deletion options.
+### 🔐 Authentication
+- Secure **sign-up** and **log-in** process with encrypted password storage.
+- **Update** user profile details (name, email, role, and password) from the settings page.
+- Options to **log out** or **delete** user account.
 
 ### 📝 Task Management
-- **Add Task**: Create tasks with various attributes like title, priority, status, start date, end date, tags, and descriptions.
-- **Update Task**: Edit task details as needed.
-- **Delete Task**: Remove tasks with ease.
+- **Create Tasks**: Add tasks with detailed attributes including title, priority, status, start/end dates, and descriptions.
+- **Edit Tasks**: Modify task details whenever necessary.
+- **Delete Tasks**: Remove tasks easily.
 
-### 🗂 Task Dashboard
-- View all tasks in a centralized dashboard, organized by their status (To Do, In Progress, Completed).
-- **Drag and Drop**: Reorder tasks within their containers and move tasks between different status categories. Changes are saved to the backend and persist on page refresh.
+### 📊 Task Dashboard
+- A centralized dashboard to view tasks, categorized by status (To Do, In Progress, Completed).
+- **Drag-and-Drop**: Reorganize tasks and move them between different status categories. The changes persist even after page refreshes.
 
-### 🏷 Tags
-- Add and delete tags for tasks to better organize and categorize them.
 
 ### 🎨 User Interface
-- Fully responsive design, ensuring a smooth experience on both desktop and mobile devices.
-- **Dark Mode**: Toggle between light and dark themes for a comfortable viewing experience.
+- Fully **responsive** design for both desktop and mobile views.
+- **Dark Mode** support for easy viewing, adjustable via toggle.
 
-### 🔧 Settings
-- Update user profile information, including name, email, and role.
-- Change security details such as password.
-- Log out or delete your account from the settings page.
+### ⚙️ Settings
+- Update profile information such as name, email, and role.
+- Change **security settings**, including password update.
+- Option to **log out** or **delete this account** your account.
 
-## 🛠️ Main Technologies
-- React
-- JavaScript
-- Node.js & Express
-- MongoDB & Mongoose
-- Vite
-- Tailwind CSS
+---
 
-## 📝 Process
+## 🛠 Technologies
 
-I started by listing the essential features I wanted in a task manager, drawing inspiration from popular tools like Trello and Notion. The development process began with setting up the backend using Node.js, Express, and MongoDB to handle user authentication and task management.
+The application leverages the following technologies:
 
-Once the backend was ready, I moved on to setting up Vite for the frontend and integrating it with React and JavaScript. I focused on creating a user-friendly dashboard that allowed easy task management with drag-and-drop functionality. The styling was handled using Tailwind CSS, making the interface clean and responsive.
+- **Frontend**: React, JavaScript, Vite, Tailwind CSS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB, Mongoose
 
-The most challenging part was implementing the drag-and-drop functionality and ensuring that the changes were reflected in the backend and persisted on page refresh. Learning how to efficiently manage state across different components was also a significant part of the process. Since it was my first time building a fullstack application using MERN, I found it challenging but equally rewarding to implement authentication features and security using packages such as JWT and bcrypt🔐.
+---
+
+## 📝 Development Process
+
+The development of this app began by setting up the backend using **Node.js**, **Express**, and **MongoDB** for managing user authentication and task-related data. After the backend was operational, I proceeded with building the **frontend** using **React** with **Vite** as the bundler, along with **Tailwind CSS** for clean, responsive UI.
+
+The **drag-and-drop functionality** posed a unique challenge. I ensured the tasks could be easily reordered and moved between columns. I used state management to maintain task status and applied **localStorage** for persistence across page refreshes.
+
+Security was also a key focus. I used **JWT** (JSON Web Tokens) for authentication and **bcrypt** for secure password hashing.
+
+---
 
 ## 📁 Environment Setup
-- **Frontend**: A sample environment file is located in the `frontend` folder. It includes placeholders for environment variables used by the React application.
+
+### Frontend
+1. Navigate to the `frontend` directory.
+2. Create a `.env` file from the `.env.sample` file provided.
+3. Replace the placeholders in the `.env` file with your actual values.
+4. Install the required dependencies by running:
+ 
+ 
+
 - **Backend**: A sample environment file is located in the `backend` folder. It includes placeholders for environment variables used by the Node.js/Express application.
 
 Please make sure to replace the placeholders in these `.env.sample` files with your actual values in the `.env` files to run the application successfully.
@@ -75,23 +87,3 @@ Please make sure to replace the placeholders in these `.env.sample` files with y
 5. Start the development server by running
    ```bash
    npm run start
-
-## 🤔 How Can It Be Improved?
-While the current version of Taskly is robust and feature-rich, there are several areas for improvement:
-- **Profile Picture**: Allow users to upload and manage a profile picture.
-- **Additional Task Attributes**: Include more detailed attributes like start time, end time, and estimated time for tasks.
-- **Inbuilt Calendar**: Integrate a calendar feature to track tasks and events visually.
-- **Password Reset**: Implement a password reset functionality for enhanced user security.
-- **Notifications**: Add in-app notifications for task updates and deadlines.
-
-## 🐛 Current Bugs
-So far, Taskly performs well on the web and on mobile devices. If you encounter any bugs or issues, please let me know!
-
-## Credits 🙏
-- Favicon by Flaticon
-- Cover picture on Auth page from Dribble
-
-## 🎥 A short Demo
-I couldn't include all the features in this short video, but tried to include the main ones.
-
-https://github.com/user-attachments/assets/ed74edf0-c151-47ba-a833-433b04ba8e22
