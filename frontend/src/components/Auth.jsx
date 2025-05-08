@@ -62,7 +62,10 @@ function auth() {
       setShowLoader(false);
     }
   };
-
+  console.log("Request URL:", authStatus === "signup"
+    ? `${import.meta.env.VITE_URL}/api/users/signup`
+    : `${import.meta.env.VITE_URL}/api/users/login`);
+  
   const changeAuthStatus = () => {
     setAuthStatus((prev) => (prev === "signup" ? "login" : "signup"));
   };
