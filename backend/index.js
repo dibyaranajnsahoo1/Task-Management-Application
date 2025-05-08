@@ -48,6 +48,7 @@ app.use(
       "https://task-management-application-ylb2.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
+     
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
