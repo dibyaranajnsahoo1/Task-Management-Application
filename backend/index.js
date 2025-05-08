@@ -45,7 +45,7 @@ app.use(hpp());
 app.use(
   cors({
     origin: [
-      "https://task-management-application-t1tv.vercel.app/",
+      "https://task-management-application-t1tv.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
     ],
@@ -58,29 +58,26 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Routes
 app.use("/api/users", userRouter);
 app.use("/api/dashboard", dashboardRouter);
 app.use("/api/tasks", taskRouter);
 app.use("/api/settings", settingsRouter);
 
-// 404 handler for undefined routes
+
 app.use("*", (req, res) => {
   res.status(404).json({
     message: "Not Found",
   });
 });
 
-// Global error handler
 app.use(errorController);
 
-// Connect to MongoDB
 mongoose
   .connect(DB, {})
   .then(() => {
     console.log("MongoDB connected");
 
-    // Listen on the dynamic port set by Render
+  
     const port = process.env.PORT || 3000;
     const server = http.createServer(app);
     server.listen(port, () => {
