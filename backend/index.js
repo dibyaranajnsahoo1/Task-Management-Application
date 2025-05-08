@@ -45,7 +45,7 @@ app.use(hpp());
 app.use(
   cors({
     origin: [
-      "https://task-management-application-t1tv.vercel.app",
+      "https://task-management-application-ylb2.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
     ],
