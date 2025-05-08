@@ -87,7 +87,12 @@ Please make sure to replace the placeholders in these `.env.sample` files with y
 5. Start the development server by running
    ```bash
    npm run start
-https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184749.png
-https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184730.png
-https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184916.png
-https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184923.png
+# Task Management Application
+
+## Screenshots
+
+![Image 1](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184749.png)
+![Image 2](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184730.png)
+![Image 3](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184916.png)
+![Image 4](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184923.png)
+
