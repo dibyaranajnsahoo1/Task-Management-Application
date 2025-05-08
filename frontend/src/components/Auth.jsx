@@ -39,8 +39,8 @@ function auth() {
 
       const res = await axios.post(
         authStatus === "signup"
-          ? `${import.meta.env.VITE_URL}/api/users/signup`
-          : `${import.meta.env.VITE_URL}/api/users/login`,
+          ? `https://task-management-application-2-6lej.onrender.com/api/users/signup`
+          : `https://task-management-application-2-6lej.onrender.com/api/users/login`,
         { ...userDetails, ...passwordDetails },
         {
           withCredentials: true 
