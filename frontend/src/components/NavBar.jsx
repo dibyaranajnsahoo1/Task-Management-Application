@@ -57,7 +57,7 @@ function NavBar({ active }) {
         </div>
        
       </div>
-      <div className="user m-2 rounded-xl h-14 mb-12 border-[1px] border-border-color flex items-center p-3">
+      <div className="user m-2 rounded-xl h-14 mb-12  border-border-color flex items-center p-3">
         <HiUserCircle size={35} className="mr-2 text-priority-color" />
 
         <div className="flex flex-col">
@@ -73,7 +73,7 @@ function NavBar({ active }) {
           <li className="h-10 flex items-center justify-between cursor-pointer my-5 ">
             <span className={active === "/dashboard" ? "active-text" : ""}>
               <TbLayout2Filled className="inline mr-3" size={20} />
-              Overview
+              Dashboard
             </span>
             <span
               className={active === "/dashboard" ? "active-tag" : ""}
@@ -90,7 +90,6 @@ function NavBar({ active }) {
           </li>
         </Link>
       </ul>
-
       <div className="cursor-pointer absolute bottom-6 pl-3">
         {mode === "light" ? (
           <MdDarkMode size={25} onClick={handleToggleMode} fill="#767575" />

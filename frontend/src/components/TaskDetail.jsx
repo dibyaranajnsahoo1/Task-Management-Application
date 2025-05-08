@@ -18,7 +18,7 @@ function TaskDetail() {
           &times;
         </button>
 
-        <TaskForm />
+        <TaskForm />  
       </div>
     </div>
   );

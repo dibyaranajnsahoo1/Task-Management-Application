@@ -24,9 +24,9 @@ export default {
         "tags-color" : "var(--tags-color)",
       },
       backgroundImage: {
-       "to-do-gradient" : "linear-gradient(90deg, rgba(243,227,172,1) 0%, rgba(242,186,24,1) 100%)",
-       "progress-gradient" : "linear-gradient(90deg, rgba(244,127,249,1) 0%, rgba(99,0,146,1) 100%)",
-       "completed-gradient" : "linear-gradient(90deg, rgba(127,144,249,1) 0%, rgba(7,16,191,1) 100%)"
+       'to-do-gradient': 'linear-gradient(to right, #f56565, #e53e3e)',          // Red gradient
+        'progress-gradient': 'linear-gradient(to right, #f6e05e, #ecc94b)',      // Yellow gradient
+        'completed-gradient': 'linear-gradient(to right, #38b2ac, #48bb78)', 
       },
     
     },

@@ -2,9 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { CiTimer } from "react-icons/ci";
 import { GlobalState } from "../context/GlobalState";
 import { MdDeleteOutline } from "react-icons/md";
-import { MdOutlineCancel } from "react-icons/md";
 import DatePicker from "react-datepicker";
-import { WithContext as ReactTags } from "react-tag-input";
 import { showAlert } from "../assets/helpers";
 import "react-datepicker/dist/react-datepicker.css"; // Import the CSS for DatePicker
 
@@ -238,20 +236,12 @@ function TaskForm() {
             />
           </label>
 
-          <ReactTags
-            tags={tags}
-            separators={["Enter", "Tab", ",", "Return"]}
-            placeholder="add tags"
-            handleAddition={handleAddition}
-            handleDelete={handleDelete}
-            maxTags={4}
-            allowDragDrop={false}
-          />
-          <span className="text-[10px] text-[#767575] font-roboto">Use , to separate tags on touchscreens.</span>
-
+          
           <textarea
             type="text"
-            className="bg-transparent  min-h-fit resize-none outline-none border-0 mode-items"
+            className="bg-transparent min-h-fit resize-none outline-none mode-items border border-gray-300 rounded-md p-4"
+
+        
             placeholder="write description..."
             rows={6}
             value={taskDetails?.description}
