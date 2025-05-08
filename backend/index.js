@@ -21,35 +21,26 @@ const DB = process.env.DB_CONNECTION_STRING.replace(
   process.env.DB_PASSWORD
 );
 
-//ERROR HANDLING
-
-// This will catch any uncaught exceptions from anywhere in your app
 process.on("uncaughtException", (err) => {
   console.log("UNCAUGHT EXCEPTION! 💥 Shutting down...");
   console.error(err.name, err.message);
   process.exit(1);
 });
-// This will catch any unhandled promise rejections from anywhere in your app
+
 process.on("unhandledRejection", (err) => {
   console.log("UNHANDLED REJECTION! 💥 Shutting down...");
   console.error(err.name, err.message);
-  // Attempt to close server gracefully before exiting
   server.close(() => {
     process.exit(1);
   });
 });
 
-// Middleware setup
-// Set Security HTTP Headers using Helmet
 app.use(helmet());
 
-// Data Sanitization against NoSQL Injection attacks
 app.use(mongoSanitize());
 
-// Data Sanitization against XSS attacks
 app.use(xss());
 
-// Prevent HTTP Parameter Pollution
 app.use(hpp());
 app.use(
   cors(
@@ -57,16 +48,16 @@ app.use(
       origin: [
         "https://taskly-frontend-omega.vercel.app",
         "http://localhost:5173",
-      ], // Your frontend origin
-      methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allowed methods
+      ], 
+      methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], 
       credentials: true,
-    } // Allows credentials (cookies) to be sent
+    } 
   )
 );
 
 app.use(express.json());
 app.use(cookieParser());
-// Middleware to parse application/x-www-form-urlencoded
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/users", userRouter);
@@ -94,7 +85,7 @@ mongoose
   })
   .catch((err) => {
     console.error("DATABASE CONNECTION ERROR:", err);
-    process.exit(1); //appication halting with an error
+    process.exit(1); 
   });
 
 module.exports = app;

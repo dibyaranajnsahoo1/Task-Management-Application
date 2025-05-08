@@ -11,7 +11,7 @@ const { protect } = require("../src/controllers/authController");
 
 const taskRouter = express.Router();
 
-taskRouter.use(protect); // making sure the user is logged in
+taskRouter.use(protect); 
 taskRouter.route("/").get(getAllTasks).post(createTask);
 taskRouter.patch("/updateOrder", updateTasksOrder)
 

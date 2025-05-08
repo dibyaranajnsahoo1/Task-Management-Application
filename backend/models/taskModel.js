@@ -41,7 +41,7 @@ const taskSchema = new mongoose.Schema({
   order: Number,
 });
 
-//Middleware to set the lastUpdated automatically the first time
+
 
 taskSchema.pre("save", function (next) {
   if (this.dueDate && !(this.dueDate >= this.startDate))
