@@ -99,7 +99,6 @@ function auth() {
               <MdCancel size={17} fill="red" className="cross " />
             </div>
           )}
-        
           <div className="form-item border-[1px] border-[#e2e2e2] focus:border-2 focus:border-blue-500 rounded-lg  flex items-center py-2 px-3 sm:px-5 sm:py-3 space-x-3 text-xs sm:text-sm ">
             <IoMailOutline size={18}  className="text-priority-color" />
             <input
@@ -135,7 +134,6 @@ function auth() {
             <FaCircleCheck fill="green" className="check " />
             <MdCancel size={17} fill="red" className="cross " />
           </div>
-          {/* It Will */}
           {authStatus === "signup" && (
             <div className="form-item border-[1px] border-[#e2e2e2] focus:border-2 focus:border-blue-500 rounded-lg  flex items-center py-2 px-3 sm:px-5 sm:py-3  space-x-3 text-xs sm:text-sm">
               <CiLock size={18}  className="thick-stroke text-priority-color" />
@@ -179,7 +177,7 @@ function auth() {
         <div className="flex items-center mt-5">
           <div className="block border-b-[3px] w-full border-[#e2e2e2]"></div>
           <div
-            className=" font-lato w-fit text-nowrap mx-1 text-[#8f8f8f] cursor-pointer hover:underline text-[8px] sm:text-xs "
+            className=" font-lato w-fit text-nowrap mx-1 text-[#8f8f8f] cursor-pointer hover:underline text-[12px] sm:text-xs "
             onClick={changeAuthStatus}
           >
             {authStatus === "signup" ? "Have an account" : "Create Account"}
