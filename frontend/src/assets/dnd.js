@@ -42,7 +42,6 @@ const getIndex = (tasks, type, id, container) => {
       overIndex !== -1
     ) {
       if (activeData.section === overData.section) {
-        //For sorting tasks in same container
 
         const updatedArray = arrayMove(activeContainer, activeIndex, overIndex);
         setTasks((prev) => ({

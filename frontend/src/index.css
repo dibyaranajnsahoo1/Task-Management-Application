@@ -201,31 +201,31 @@ span.active-tag{
 width: 12px;
 height: 100%;
 background-color: #2563eb;
-border-start-start-radius: 0.375rem /* 6px */;
-border-end-start-radius: 0.375rem /* 6px */;
+border-start-start-radius: 0.375rem;
+border-end-start-radius: 0.375rem;
 
 }
 .active-text{
   color: var(--tags-color);
 }
-/* Override autofill background color */
+
 input:-webkit-autofill {
-  background-color: transparent !important; /* Set to your desired color */
-  box-shadow: 0 0 0px 1000px transparent inset !important; /* Remove any shadow */
+  background-color: transparent !important; 
+  box-shadow: 0 0 0px 1000px transparent inset !important;
 }
 
-/* Firefox */
+
 input:-moz-autofill {
   background-color: transparent !important;
 }
 
-/* Safari */
+
 input:-webkit-autofill {
   background-color: transparent !important;
-  border: 1px solid transparent !important; /* Adjust as needed */
+  border: 1px solid transparent !important; 
 }
 
-/* Edge */
+
 input:-ms-input-placeholder {
   background-color: transparent !important;
 }

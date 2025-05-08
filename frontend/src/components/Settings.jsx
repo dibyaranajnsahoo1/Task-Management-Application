@@ -169,7 +169,6 @@ function Settings() {
         <MdCancel size={17} fill="red" className="cross" />
       </div>
 
- 
       <div className="form-item flex items-center px-4 py-3 border rounded-lg border-border-color space-x-3 text-sm">
         <CiLock size={18} className="thick-stroke text-priority-color" />
         <input
@@ -206,7 +205,7 @@ function Settings() {
       </div>
     </form>
 
-
+    
     <div className="flex justify-end w-full max-w-xl space-x-4 mt-6">
       <button
         type="button"
@@ -216,7 +215,7 @@ function Settings() {
         {showLoader.status && showLoader.feature === "delete" ? (
           <span className="loader"></span>
         ) : (
-          "Delete My Account"
+          "Delete This Account"
         )}
       </button>
       <button

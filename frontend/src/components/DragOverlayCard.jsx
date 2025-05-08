@@ -46,7 +46,7 @@ function DragOverlayCard({task}) {
             }) ?? "none"}
           </span>
         </div>
-
+        {/* drag */}
         <div className="flex justify-between font-lato text-xs mode-items ">
           <RiDraggable
             size={15}
