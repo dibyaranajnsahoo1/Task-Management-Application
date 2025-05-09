@@ -95,4 +95,8 @@ Please make sure to replace the placeholders in these `.env.sample` files with y
 ![Image 2](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184730.png)
 ![Image 3](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184916.png)
 ![Image 4](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-08%20184923.png)
+![Image 5](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-09%20102738.png)
+
+![Image 6](https://github.com/dibyaranajnsahoo1/Task-Management-Application/blob/main/Screenshot%202025-05-09%20102706.png)
+
 
